@@ -1,7 +1,7 @@
 {{ define "main" }}
 <div id="layout" class="pure-g">
 <article class="pure-u-1">
-{{ range first 5 .Site.Pages }}
+{{ range first 5 .Site.RegularPages }}
   {{ partial "content.header.html" . }}
   <p>{{ .Summary }}</p>
   {{ if .Truncated }}
